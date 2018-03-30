@@ -5,7 +5,7 @@ MAINTAINER fanningert <thomas@fanninger.at>
 RUN apk update
 RUN apk add bash
 # Taiga: Essential packages 
-RUN apk add --virtual build-dependencies build-base gcc wget autoconf flex bison libjpeg-turbo-dev
+RUN apk add build-base gcc wget autoconf flex bison libjpeg-turbo-dev
 RUN apk add freetype-dev zlib-dev zeromq-dev gdbm-dev ncurses-dev
 RUN apk add automake libtool libffi-dev curl git tmux gettext
 RUN apk add rabbitmq-server redis
